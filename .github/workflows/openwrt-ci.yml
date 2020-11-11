@@ -82,10 +82,6 @@ jobs:
           CONFIG_PACKAGE_luci-theme-netgear=y
           EOF
           
-          cat >> .config <<EOF
-          # CONFIG_TARGET_IMAGES_PAD is not set
-          # CONFIG_VMDK_IMAGES is not set
-          EOF
       - name: Make download
         run: |
           make download -j8
